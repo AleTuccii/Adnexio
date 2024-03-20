@@ -1,0 +1,384 @@
+@charset "ISO-8859-1";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Press+Start+2P&family=Righteous&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+	 background: linear-gradient(#07023dc5, #4b0333cf,#7d0577c2 );
+}
+
+.container-0{
+    width: 100%;
+}
+
+.content-0{
+    margin-top: 10vh;
+    color: #fff;
+    max-width: 620px;
+}
+
+.torna-su {
+position: fixed;
+bottom: 20px;
+right: 20px;
+
+}
+
+.torna-su a {
+text-decoration: none;
+padding: 10px 15px;
+background-color: #b50664;
+color: #fff;
+border-radius: 50px;
+font-size: 20px;
+font-weight: bolder;
+}
+
+/*Messaggio errore*/
+.msg-errore{
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	margin-top: 10vh;
+	font-size: 60px;
+	color: white;;
+}
+.fk-body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20vh;
+  
+}
+.prodotto{
+  margin-top: 2vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin-bottom: 2vh;
+  border-bottom: 3px solid #b50664;
+  height: 300px;
+  
+  width: 1200px;
+  
+ 
+}
+.cont-input{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 800px;
+}
+.container{
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  position: relative;
+  max-width: 1400px;
+  width: 100%;
+  border-radius: 20px;
+  padding: 30px;
+  margin: 0 15px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+  box-shadow: 0 25px 45px rgba(0,0,0,0,0.1); 
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+
+}
+.container header{
+  position: relative;
+  font-size: 20px;
+  font-weight: 500;
+  color: #fff;
+}
+.container header::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  height: 3px;
+  width: 120px;
+  background-color: #b50664;
+}
+.container .form{
+  position: relative;
+  margin: 10px;
+  min-height: 200px;
+}
+.container .form .fields{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+ 
+}
+.form .fields .input-field{
+  display: flex;
+  width: 180px;
+  flex-direction: column;
+  margin: 4px 4px;
+}
+.input-field label{
+  font-size: 15px;
+  font-weight: 500;
+  color: #fff;
+  text-align: center;
+
+}
+.cont-img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 300px;
+}
+.img-visual{
+  width: 250px;
+  height: 150px;
+  
+  border-radius: 25px;
+
+}
+.img-visual img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+}
+
+.input-field input{
+  font-size: 1em;
+  font-weight: 500;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 5px;
+  height: 42px;
+ 
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  outline: none;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  letter-spacing: 1px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0,0.05);
+}
+.acquista{
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  min-height: 10vh;
+  align-items: center;
+}
+.acquista button{
+  background-color: #b50664;
+  height: 40px;
+  width: 180px;
+  border-radius: 20px;
+  font-size: 22px;
+  color: #fff;
+  border: none;
+  font-weight: 600;
+}
+.acquista button:hover{
+  cursor: pointer;
+  color: #07023dc5;
+}
+
+form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2vh;
+}
+form input{
+  width: 200px;
+  margin: 0 10px;
+  height: 40px;
+  border-radius: 25px;
+  outline: none;
+  border: none;
+  background-color: #b50664;
+  font-weight: bold;
+  color: #ffffff;
+}
+form input[type="submit"]:hover{
+  color: #07023dc5;
+  cursor: pointer;
+}
+.cont-msg{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.successo{
+  
+  text-align: center;
+  font-size: 25px;
+  color: #fff;
+  background-color: #b50664;
+  border-radius: 20px;
+  width: 50%;
+  margin: 3vh;
+
+}
+.errore{
+  text-align: center;
+  font-size: 25px;
+  color: #fff;
+  background-color: black;
+  border-radius: 20px;
+  width: 50%;
+  margin: 3vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer-body{
+    margin-top: 25vh;
+}
+  .footer {
+    position: relative;
+    width: 100%;
+    background: #3586ff;
+    min-height: 80px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .social-icon,
+  .menu {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+  }
+  
+  .social-icon__item,
+  .menu__item {
+    list-style: none;
+  }
+  
+  .social-icon__link {
+    font-size: 2rem;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+  }
+  .social-icon__link:hover {
+    transform: translateY(-10px);
+  }
+  
+  .menu__link {
+    font-size: 1.2rem;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+    text-decoration: none;
+    opacity: 0.75;
+    font-weight: 300;
+  }
+  
+  .menu__link:hover {
+    opacity: 1;
+  }
+  
+  .footer p {
+    color: #fff;
+    margin: 15px 0 10px 0;
+    font-size: 1rem;
+    font-weight: 300;
+  }
+  
+  .wave {
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url("https://i.ibb.co/wQZVxxk/wave.png");
+    background-size: 1000px 100px;
+  }
+  
+  .wave#wave1 {
+    z-index: 1000;
+    opacity: 1;
+    bottom: 0;
+    animation: animateWaves 8s linear infinite;
+  }
+  
+  .wave#wave2 {
+    z-index: 999;
+    opacity: 0.5;
+    bottom: 10px;
+    animation: animate 7s linear infinite !important;
+  }
+  
+  .wave#wave3 {
+    z-index: 1000;
+    opacity: 0.2;
+    bottom: 15px;
+    animation: animateWaves 6s linear infinite;
+  }
+  
+  .wave#wave4 {
+    z-index: 999;
+    opacity: 0.7;
+    bottom: 20px;
+    animation: animate 7s linear infinite;
+  }
+  
+  @keyframes animateWaves {
+    0% {
+      background-position-x: 1000px;
+    }
+    100% {
+      background-positon-x: 0px;
+    }
+  }
+  
+  @keyframes animate {
+    0% {
+      background-position-x: -1000px;
+    }
+    100% {
+      background-positon-x: 0px;
+    }
+  }
+  
+  #titolo{
+	  font-family: 'Righteous', sans-serif;
+  }

@@ -1,0 +1,1973 @@
+@charset "ISO-8859-1";
+  @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(9, 0, 77, 0.65), rgba(157, 8, 75, 0.65)), url(../assets/Hades.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 10px 3%;
+}
+
+/*Primo Contenuto*/
+.content-0 {
+    margin-top: 14%;
+    color: #fff;
+    max-width: 620px;
+}
+
+.content-0 h1 {
+    font-size: 70px;
+    font-family: "Righteous", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 85px;
+    margin-bottom: 25px;
+}
+
+/*Secondo Contenuto*/
+.container-1 {
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(9, 0, 77, 0.65), rgba(157, 8, 75, 0.65)), url(../assets/bk3.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 10px 8%;
+}
+
+.content-1 {
+    color: #fff;
+}
+
+.content-1 h2 {
+    font-size: 70px;
+    font-family: "Righteous", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 85px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.content-1 p {
+    text-align: center;
+}
+
+/*Card Immagini*/
+.wrapper {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    height: 500px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: start;
+}
+
+.card {
+    width: 80px;
+    border-radius: .75rem;
+    background-size: cover;
+    overflow: hidden;
+    border-radius: 2rem;
+    margin: 0 10px;
+    display: flex;
+    align-items: flex-end;
+    transition: .6s cubic-bezier(.28, -0.03, 0, .99);
+    box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.8);
+}
+
+.card>.row {
+    color: white;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.card>.row>.icon {
+    background: #223;
+    color: white;
+    border-radius: 50%;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+}
+
+.card>.row>.description {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    height: 80px;
+    width: 520px;
+    opacity: 0;
+    transform: translateY(30px);
+    transition-delay: .3s;
+    transition: all .3s ease;
+}
+
+.description p {
+    color: #b0b0ba;
+    padding-top: 5px;
+}
+
+.description h4 {
+    text-transform: uppercase;
+}
+
+.input {
+    display: none;
+}
+
+.input:checked+label {
+    width: 900px;
+}
+
+.input:checked+label .description {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
+
+.card[for="c1"] {
+	background-image: url('../assets/hollow2.jpg');
+}
+
+.card[for="c2"] {
+    background-image: url('../assets/Hades.png');
+}
+
+.card[for="c3"] {
+    background-image: url('../assets/Cyberpunk.jpeg');
+}
+
+.card[for="c4"] {
+    background-image: url('../assets/personaggi.jpg');
+}
+
+.description a{
+	color: white;
+	text-decoration: none;
+	
+}
+
+.description a:hover{
+	color: #b50664;
+	
+	
+}
+/*Terzo contenuto*/
+.container-2,
+#myVideo {
+    width: 100%;
+    height: 100vh;
+}
+
+.content-2 {
+    color: #fff;
+}
+
+.content-2 h3 {
+    position: absolute;
+    margin-left: 20vh;
+    margin-top: 10vh;
+    font-size: 65px;
+    font-family: "Righteous", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/*Quarto contenuto Ricerca*/
+.bottone button{
+    display: block;
+    margin: auto;
+    height: 40px;
+    width: 40px;
+    margin-top: 2vh;
+    border: none;
+    outline: none;
+    border-radius: 100px;
+    background-color: #b50664;
+    color: #fff;
+    font-size: 18px;
+}
+.bottone button:hover{
+    cursor: pointer;
+    color: #07023dc5;
+}
+
+#sp-font{
+	font-family: 'Press Start 2P', system-ui;
+}
+.container-3{
+    border-radius: 25px;
+    width: 1200px;
+    height: auto;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    box-shadow: 0 25px 45px rgba(0,0,0,0,0.1); 
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.container-home3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 110vh;
+    background-image: linear-gradient(rgba(9, 0, 77, 0.65), rgba(157, 8, 75, 0.65));
+}
+.container-3 h2{
+    text-align: center;
+    margin: auto;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    font-size: 60px;
+    color: white;
+}
+.container-3 .form-ricerca{
+	width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    
+}
+.container-3 .form-ricerca h2{
+	text-align: center;
+	margin-bottom: 5vh;
+	font-size: 65px ;
+    font-family: "Righteous", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.container-3 #fo{
+	margin-bottom: 2vh;
+}
+.form button{
+    display: flex;
+    justify-content: center;
+}
+.form-ricerca h4{
+    margin: auto;
+    text-align: center;
+    margin-top: 3vh;
+	margin-bottom: 3vh;
+	font-size: 20px;
+	background-color: #b50664;
+    border-radius: 25px;
+    width: 300px;
+    color: #fff;
+    margin-top: 2vh;
+}
+.ck-back{
+	display: flex;
+	align-items: center;
+    justify-content: center;
+}
+.ck-back label{
+	font-size: 16px;
+	margin-right: 27px;
+    
+
+}
+
+form label{
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 2vh;
+}
+.form-ricerca input[type="text"]{
+	width: 250px;
+	height: 30px;
+	border-radius: 5px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    box-shadow: 0 25px 45px rgba(0,0,0,0,0.5); 
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.form-ricerca input[type="number"]{
+	width: 250px;
+	height: 30px;
+	border-radius: 5px;
+	margin-right: 120px;
+}
+.form-ricerca .button{
+	display: flex;
+	justify-content: center;
+	margin-top: 2vh;
+    margin-bottom: 7vh;
+}
+.button input[type="submit"]{
+	width: 100px;
+	height: 40px;
+	border-radius: 25px;
+	background-color: #07023dc5;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18;
+    	
+}
+.button input[type="submit"]:hover{
+    cursor: pointer;
+    color: #b50664;
+}
+/*Checkbox modifica*/
+
+label{
+    padding-top: 15px;
+}
+.op-input:checked::after{
+	animation: click-wave 0.75s;
+	background: #07023dc5;
+	content: '';
+	display: block;
+	position: relative;
+	z-index: 100;
+}
+@keyframes click-wave{
+	0%{
+		height: 20px;
+		width: 20px;
+		opacity: 0.5;
+		position: relative;
+		border-radius: 80px ;
+	}
+	100%{
+		height: 50px;
+		width: 50px;
+		margin-left: -15px;
+		margin-top: -15px;
+		opacity: 0;
+		border-radius: 80px ;
+	}
+}
+
+.op-input{
+	-webkit-appearance: none;
+	-o-appearance: none;
+	-moz-appearance: none;
+	-ms-appearance: none;
+	position: relative;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	height: 20px;
+	width: 20px;
+	transition: all 0.15s ease-out 0s;
+	background: white;
+	display: inline-block;
+	margin-right: 0.5rem;
+	outline: none;
+	position: relative;
+	z-index: 1000;
+	border-radius: 20px ;
+}
+.op-input:hover{
+	background-color: white;
+	cursor: pointer;
+}
+.op-input:checked::before{
+	height: 20px;
+	width: 20px;
+	position: absolute;
+	content: '\2713';
+	display: inline-block;
+	font-size: 16px;
+	font-weight: bold;
+	text-align: center;
+	line-height: 20px;
+}
+.prezzo{
+    margin: auto;
+}
+.prezzo label{
+    display: block;
+text-align: center;
+}
+.prezzo input[type="number"]{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    box-shadow: 0 25px 45px rgba(0,0,0,0,0.5); 
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    margin: auto;
+    height: 40px;
+}
+
+
+/*Quinto contenuto*/
+.container-4 {
+    width: 100%;
+    height: 100vh;
+}
+
+.content-4 {
+    color: #fff;
+}
+
+#myVideo {
+    width: 100%;
+    object-fit: fill;
+}
+
+.content-4 h3 {
+    position: absolute;
+    margin-left: 20vh;
+    margin-top: 10vh;
+    font-size: 65px;
+    font-family: "Righteous", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.container-5 {
+    width: 100%;
+    height: auto;
+    border: 1px solid #b50664;
+    align-items: center;
+    background-image: linear-gradient(rgba(9, 0, 77, 0.65), rgba(157, 8, 75, 0.65)), url(../assets/bk3.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+#sw-title {
+    text-align: center;
+    font-size: 30px;
+    margin-top: 50px;
+    padding: 35px;
+}
+
+.container--star{
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.sw-container, .star-wars-section{
+    height: 100%;
+    border-radius: 25px;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    position: absolute;
+}
+
+.star-wars-section {
+    width: 50%;
+    /* padding: 48px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to left, #0e3b75, #000080);
+    transition: 0.5s ease;
+    border-radius: 1px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    position: absolute;
+    left: 2px;
+}
+
+.dark-side {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to left, black, red);
+    transition: 0.5s ease;
+
+}
+
+.bundle-container {
+    height: 100%;
+    min-height: 48.99vh;
+    width: 50%;
+    font-size: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-image: linear-gradient(to right, #0e3b75, #000080);
+    position: absolute;
+    right: 2px;
+
+}
+
+.bundle-container-ds {
+    height: 100%;
+    width: 50%;
+    font-size: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-image: linear-gradient(to right, black, red);
+
+}
+
+.bundle-container p {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.bundle-container a {
+    text-decoration: none;
+    color: yellow;
+    padding: 10px;
+    margin: auto;
+}
+
+.character-container {
+    margin-top: 20px;
+}
+
+#character-image {
+    width: 250px;
+    /* Regola le dimensioni dell'immagine */
+    height: 300px;
+    transition: opacity 0.5s ease;
+}
+
+/*FAQ */
+#faq-title {
+    display: flex;
+    justify-content: center;
+    padding: 2vh;
+    margin: auto;
+    margin-top: 110px;
+    margin-bottom: 10px;
+    border-bottom: 3px solid blueviolet;
+    max-width: 600px;
+
+}
+
+.faq-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding-bottom: 20vh;
+}
+
+.faq-item {
+    border-bottom: 3px solid blueviolet;
+    margin-bottom: 20px;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+}
+
+.question {
+    cursor: pointer;
+    padding: 10px;
+    background-color: black;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    background-image: linear-gradient(to left, rgba(9, 0, 77, 0.65), rgba(157, 8, 75, 0.65)), url(../assets/bk3.jpg);
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.question img {
+    width: 40px;
+    height: 30px;
+    max-width: 65px;
+    max-height: 40px;
+    padding: 0;
+}
+
+.answer {
+    display: none;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+#marry-pipin {
+    margin-left: 6vh;
+}
+
+
+/*Footer*/
+.footer {
+    position: relative;
+    width: 100%;
+    background: #3586ff;
+    min-height: 100px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.social-icon,
+.menu {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+}
+
+.social-icon__item,
+.menu__item {
+    list-style: none;
+}
+
+.social-icon__link {
+    font-size: 2rem;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+}
+
+.social-icon__link:hover {
+    transform: translateY(-10px);
+}
+
+.menu__link {
+    font-size: 1.2rem;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+    text-decoration: none;
+    opacity: 0.75;
+    font-weight: 300;
+}
+
+.menu__link:hover {
+    opacity: 1;
+}
+
+.footer p {
+    color: #fff;
+    margin: 15px 0 10px 0;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.wave {
+    position: absolute;
+    top: -85px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url("https://i.ibb.co/wQZVxxk/wave.png");
+    background-size: cover;
+}
+
+.wave#wave1 {
+    z-index: 1000;
+    opacity: 1;
+    bottom: 0;
+    animation: animateWaves 8s linear infinite;
+}
+
+.wave#wave2 {
+    z-index: 999;
+    opacity: 0.5;
+    bottom: 10px;
+    animation: animate 7s linear infinite !important;
+}
+
+.wave#wave3 {
+    z-index: 1000;
+    opacity: 0.2;
+    bottom: 15px;
+    animation: animateWaves 6s linear infinite;
+}
+
+.wave#wave4 {
+    z-index: 999;
+    opacity: 0.7;
+    bottom: 20px;
+    animation: animate 7s linear infinite;
+}
+
+@keyframes animateWaves {
+
+    0% {
+        background-position-x: 1000px;
+    }
+
+    100% {
+        background-positon-x: 0px;
+    }
+}
+
+@keyframes animate {
+    0% {
+        background-position-x: -1000px;
+    }
+
+    100% {
+        background-positon-x: 0px;
+    }
+}
+
+
+
+/*---------Media Query----------*/
+
+
+@media (max-width: 1500px) {
+
+    .logo {
+        width: 230px;
+        cursor: pointer;
+    }
+
+    nav {
+        padding: 30px 2%;
+    }
+
+    .container-5 {
+         width: 100%;
+        height: auto;
+        border: 1px solid red;
+        align-items: center;
+        background-image: linear-gradient(rgba(9, 0, 77, 0.65), rgba(157, 8, 75, 0.65)), url(../assets/bk3.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        color: white;
+    }
+
+    #sw-title {
+        text-align: center;
+        font-size: 30px;
+        margin-top: 50px;
+        padding: 35px;
+    }
+
+    .container--star{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+
+    .sw-container, .star-wars-section{
+        height: 100%;
+        border-radius: 25px;
+        width: 70%;
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+        position: absolute;
+    }
+
+    .star-wars-section {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-image: linear-gradient(to left, #0e3b75, #000080);
+        transition: 0.5s ease;
+        border-radius: 1px;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        position: absolute;
+        left: 2px;
+    }
+
+    .dark-side {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-image: linear-gradient(to left, black, red);
+        transition: 0.5s ease;
+
+    }
+
+    .bundle-container {
+        height: 100%;
+        min-height: 48.99vh;
+        width: 50%;
+        font-size: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        background-image: linear-gradient(to right, #0e3b75, #000080);
+        position: absolute;
+        right: 2px;
+
+    }
+
+}
+
+@media (max-width: 1430px) {
+
+    .wrapper {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .container-0 {
+        padding: 0 81px;
+        margin-top: 20%;
+    }
+
+    .container-5 {
+        width: 100%;
+        height: auto;
+        border: 1px solid red;
+        align-items: center;
+        background-image: linear-gradient(rgba(9, 0, 77, 0.65), rgba(157, 8, 75, 0.65)), url(../assets/bk3.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        color: white;
+    }
+
+    #sw-title {
+        text-align: center;
+        font-size: 30px;
+        margin-top: 50px;
+        padding: 35px;
+    }
+
+    .container--star{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+
+    .sw-container, .star-wars-section{
+        height: 100%;
+        border-radius: 25px;
+        width: 70%;
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+        position: absolute;
+    }
+
+    .star-wars-section {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-image: linear-gradient(to left, #0e3b75, #000080);
+        transition: 0.5s ease;
+        border-radius: 1px;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        position: absolute;
+        left: 2px;
+    }
+
+    .dark-side {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-image: linear-gradient(to left, black, red);
+        transition: 0.5s ease;
+
+    }
+
+    .bundle-container {
+        height: 100%;
+        min-height: 48.99vh;
+        width: 50%;
+        font-size: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        background-image: linear-gradient(to right, #0e3b75, #000080);
+        position: absolute;
+        right: 2px;
+
+    }
+
+    
+
+    
+}
+
+
+@media (max-width: 1340px) {
+
+
+    .wrapper {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .container-5 {
+         width: 100%;
+        height: auto;
+        border: 1px solid red;
+        align-items: center;
+        background-image: linear-gradient(rgba(9, 0, 77, 0.65), rgba(157, 8, 75, 0.65)), url(../assets/bk3.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        color: white;
+    }
+
+    #sw-title {
+        text-align: center;
+        font-size: 30px;
+        margin-top: 50px;
+        padding: 35px;
+    }
+
+    .container--star{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+
+    .sw-container, .star-wars-section{
+        height: 100%;
+        border-radius: 25px;
+        width: 70%;
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+        position: absolute;
+    }
+
+    .star-wars-section {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-image: linear-gradient(to left, #0e3b75, #000080);
+        transition: 0.5s ease;
+        border-radius: 1px;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        position: absolute;
+        left: 2px;
+    }
+
+    .dark-side {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-image: linear-gradient(to left, black, red);
+        transition: 0.5s ease;
+
+    }
+
+    .bundle-container {
+        height: 100%;
+        min-height: 48.99vh;
+        width: 50%;
+        font-size: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        background-image: linear-gradient(to right, #0e3b75, #000080);
+        position: absolute;
+        right: 2px;
+
+    }
+
+}
+
+
+@media (max-width: 1150px) {
+
+    .wrapper {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .container-5 {
+         width: 100%;
+        height: auto;
+        border: 1px solid red;
+        align-items: center;
+        background-image: linear-gradient(rgba(9, 0, 77, 0.65), rgba(157, 8, 75, 0.65)), url(../assets/bk3.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        color: white;
+    }
+
+    #sw-title {
+        text-align: center;
+        font-size: 30px;
+        margin-top: 50px;
+        padding: 35px;
+    }
+
+    .container--star{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+
+    .sw-container, .star-wars-section{
+        height: 100%;
+        border-radius: 25px;
+        width: 70%;
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+        position: absolute;
+    }
+
+    .star-wars-section {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-image: linear-gradient(to left, #0e3b75, #000080);
+        transition: 0.5s ease;
+        border-radius: 1px;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        position: absolute;
+        left: 2px;
+    }
+
+    .dark-side {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-image: linear-gradient(to left, black, red);
+        transition: 0.5s ease;
+
+    }
+
+    .bundle-container {
+        height: 100%;
+        min-height: 48.99vh;
+        width: 50%;
+        font-size: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        background-image: linear-gradient(to right, #0e3b75, #000080);
+        position: absolute;
+        right: 2px;
+
+    }
+
+
+}
+
+
+@media (max-width: 1115px) {
+
+    .wrapper {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+
+    .container-0 {
+        margin-top: 25%;
+    }
+
+    .card {
+        width: 119px;
+        display: flex;
+        align-items: end;
+        border-radius: 2rem;
+        cursor: pointer;
+        overflow: hidden;
+        background-size: cover;
+        transition: .6s cubic-bezier(.28, -0.03, 0, .99);
+        box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.8);
+    }
+
+    .container-home3 form {
+        display: flex;
+        width: 100%;
+        height: auto;
+        padding: 30px;
+    }
+
+    .card[for="c1"] {
+        background-image: url('/assets/Cyberpunk.jpeg');
+    }
+
+    .card[for="c2"] {
+        background-image: url('/assets/Hades.png');
+    }
+
+    .card[for="c3"] {
+        background-image: url('/assets/hollow2.jpg');
+    }
+
+    .card[for="c4"] {
+        background-image: url('/assets/personaggi.jpg');
+    }
+
+    .input:checked+label {
+        width: 100%;
+    }
+
+    .card {
+        width: 119px;
+        display: flex;
+        align-items: end;
+        border-radius: 2rem;
+        cursor: pointer;
+        overflow: hidden;
+        background-size: cover;
+        transition: .6s cubic-bezier(.28, -0.03, 0, .99);
+        box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.8);
+    }
+
+    .card>.row>.icon {
+        background: #223;
+        color: white;
+        border-radius: 50%;
+        height: 50px;
+        width: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 14px;
+    }
+
+    .container-5 {
+         width: 100%;
+        height: auto;
+        border: 1px solid red;
+        align-items: center;
+        background-image: linear-gradient(rgba(9, 0, 77, 0.65), rgba(157, 8, 75, 0.65)), url(../assets/bk3.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        color: white;
+    }
+
+    #sw-title {
+        text-align: center;
+        font-size: 30px;
+        margin-top: 50px;
+        padding: 35px;
+    }
+
+    .container--star{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+
+    .sw-container, .star-wars-section{
+        height: 100%;
+        border-radius: 25px;
+        width: 70%;
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+        position: absolute;
+    }
+
+    .star-wars-section {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-image: linear-gradient(to left, #0e3b75, #000080);
+        transition: 0.5s ease;
+        border-radius: 1px;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        position: absolute;
+        left: 2px;
+    }
+
+    .dark-side {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-image: linear-gradient(to left, black, red);
+        transition: 0.5s ease;
+
+    }
+
+    .bundle-container {
+        height: 100%;
+        min-height: 48.99vh;
+        width: 50%;
+        font-size: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        background-image: linear-gradient(to right, #0e3b75, #000080);
+        position: absolute;
+        right: 2px;
+
+    }
+
+    .container--faq{
+        width: 100%;
+        margin: 0 auto;
+        padding-bottom: 20vh;
+    }
+
+    .faq-container .faq-item {
+        border-bottom: 3px solid blueviolet;
+        margin-bottom: 20px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* .faq-container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding-bottom: 20vh;
+    } */
+
+    
+
+}
+
+
+@media (max-width: 930px) {
+
+    .wrapper {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    header nav {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px 3%;
+
+    }
+
+    .container-0 {
+        margin-top: 30%;
+        padding: 0 50px;
+    }
+
+    .wave {
+        position: absolute;
+        top: -45px;
+        left: 0;
+        width: 100%;
+        height: 65px;
+        background: url(https://i.ibb.co/wQZVxxk/wave.png);
+        background-size: cover;
+    }
+
+    .footer {
+        position: relative;
+        width: 100%;
+        background: #3586ff;
+        min-height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .social-icon .menu {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px 0;
+    }
+
+    .menu {
+        flex-wrap: nowrap;
+    }
+
+    .container-home3 form {
+        display: flex;
+        width: 100%;
+        height: auto;
+        padding: 30px;
+    }
+
+    .content-1 h2 {
+        font-size: 40px;
+        font-family: "Righteous", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        line-height: 85px;
+        margin-bottom: 25px;
+        text-align: center;
+    }
+
+    .container-1 {
+        width: 100%;
+        min-height: 100vh;
+        background-image: linear-gradient(rgba(9, 0, 77, 0.65), rgba(157, 8, 75, 0.65)), url(../assets/bk3.jpg);
+        background-size: cover;
+        background-position: center;
+        padding: 0 2%;
+    }
+
+    .content-2 h3 {
+        position: absolute;
+        padding: 30px;
+        margin: 0;
+        font-size: 35px;
+        font-family: "Righteous", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+    }
+
+    .content-4 h3 {
+        position: absolute;
+        padding: 30px;
+        margin: 0;
+        font-size: 35px;
+        font-family: "Righteous", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    .card[for="c1"] {
+        background-image: url('/assets/Cyberpunk.jpeg');
+        background-position: right;
+    }
+
+    .card[for="c2"] {
+        background-image: url('/assets/Hades.png');
+        background-position: center;
+    }
+
+    .card[for="c3"] {
+        background-image: url('/assets/hollow2.jpg');
+        background-position: center;
+    }
+
+    .card[for="c4"] {
+        background-image: url('/assets/personaggi.jpg');
+        background-position: center;
+    }
+
+    .input:checked+label {
+        width: 100%;
+    }
+
+    .card {
+        width: 119px;
+        display: flex;
+        align-items: end;
+        border-radius: 2rem;
+        cursor: pointer;
+        overflow: hidden;
+        background-size: cover;
+        transition: .6s cubic-bezier(.28, -0.03, 0, .99);
+        box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.8);
+    }
+
+    .card>.row>.icon {
+        background: #223;
+        color: white;
+        border-radius: 50%;
+        height: 50px;
+        width: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 13px;
+    }
+
+    .container-5 {
+         width: 100%;
+        height: auto;
+        border: 1px solid red;
+        align-items: center;
+        background-image: linear-gradient(rgba(9, 0, 77, 0.65), rgba(157, 8, 75, 0.65)), url(../assets/bk3.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        color: white;
+    }
+
+    #sw-title {
+        text-align: center;
+        font-size: 30px;
+        margin-top: 50px;
+        padding: 35px;
+    }
+
+    .container--star{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+
+    .sw-container, .star-wars-section{
+        height: 100%;
+        border-radius: 25px;
+        width: 85%;
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+        position: absolute;
+    }
+
+    .star-wars-section {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-image: linear-gradient(to left, #0e3b75, #000080);
+        transition: 0.5s ease;
+        border-radius: 1px;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        position: absolute;
+        left: 2px;
+    }
+
+    .dark-side {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-image: linear-gradient(to left, black, red);
+        transition: 0.5s ease;
+
+    }
+
+    .bundle-container {
+        height: 100%;
+        min-height: 48.99vh;
+        width: 50%;
+        font-size: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        background-image: linear-gradient(to right, #0e3b75, #000080);
+        position: absolute;
+        right: 1px;
+
+    }
+
+    
+
+}
+
+
+@media (max-width: 610px) {
+
+    .wrapper {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .container-1 {
+        width: 100%;
+        min-height: 100vh;
+        background-image: linear-gradient(rgba(9, 0, 77, 0.65), rgba(157, 8, 75, 0.65)), url(../assets/bk3.jpg);
+        background-size: cover;
+        background-position: center;
+        padding: 0 2%;
+    }
+
+    .card[for="c1"] {
+        background-image: url('/assets/Cyberpunk.jpeg');
+    }
+
+    .card[for="c2"] {
+        background-image: url('/assets/Hades.png');
+    }
+
+    .card[for="c3"] {
+        background-image: url('/assets/hollow2.jpg');
+    }
+
+    .card[for="c4"] {
+        background-image: url('/assets/personaggi.jpg');
+    }
+
+    .input:checked+label {
+        width: 100%;
+    }
+
+    .card {
+        width: 119px;
+        display: flex;
+        align-items: end;
+        border-radius: 2rem;
+        cursor: pointer;
+        overflow: hidden;
+        background-size: cover;
+        transition: .6s cubic-bezier(.28, -0.03, 0, .99);
+        box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.8);
+    }
+
+    .card>.row>.icon {
+        background: #223;
+        color: white;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+
+    .card>.row {
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: nowrap;
+        padding: 5px;
+    }
+
+    .card>.row>.description {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        overflow: hidden;
+        height: 80px;
+        width: 520px;
+        opacity: 0;
+        transform: translateY(30px);
+        transition-delay: .3s;
+        transition: all .3s ease;
+    }
+
+    .container-home3 form {
+        display: flex;
+        width: 100%;
+        height: auto;
+        padding: 30px;
+    }
+
+
+    .wave {
+        position: absolute;
+        top: -45px;
+        left: 0;
+        width: 100%;
+        height: 65px;
+        background: url(https://i.ibb.co/wQZVxxk/wave.png);
+        background-size: cover;
+    }
+
+    .footer {
+        margin-top: 10vh;
+        position: relative;
+        width: 100%;
+        background: #3586ff;
+        min-height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .social-icon .menu {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px 0;
+    }
+
+    .menu {
+        flex-wrap: nowrap;
+    }
+
+    .content-0 h1 {
+        font-size: 40px;
+        font-family: "Righteous", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        line-height: 50px;
+        margin-top: 90%;
+        margin-bottom: 25px;
+
+    }
+
+    .content-0 {
+        margin-top: 20px;
+        color: #fff;
+        max-width: 620px;
+    }
+
+    .container-5 {
+         width: 100%;
+        height: auto;
+        border: 1px solid red;
+        align-items: center;
+        background-image: linear-gradient(rgba(9, 0, 77, 0.65), rgba(157, 8, 75, 0.65)), url(../assets/bk3.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        color: white;
+    }
+
+    #sw-title {
+        text-align: center;
+        font-size: 30px;
+        margin-top: 50px;
+        padding: 35px;
+    }
+
+    .container--star{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+
+    .sw-container, .star-wars-section{
+        height: 100%;
+        border-radius: 25px;
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+        position: absolute;
+    }
+
+    .star-wars-section {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-image: linear-gradient(to left, #0e3b75, #000080);
+        transition: 0.5s ease;
+        border-radius: 1px;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        position: absolute;
+        left: 2px;
+    }
+
+    .dark-side {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-image: linear-gradient(to left, black, red);
+        transition: 0.5s ease;
+
+    }
+
+    .bundle-container {
+        height: 100%;
+        min-height: 48.99vh;
+        width: 50%;
+        font-size: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        background-image: linear-gradient(to right, #0e3b75, #000080);
+        position: absolute;
+        right: 2px;
+
+    }
+
+
+}
+
+
+@media (max-width: 500px) {
+
+    .container-1 {
+        width: 100%;
+        min-height: 100vh;
+        background-image: linear-gradient(rgba(9, 0, 77, 0.65), rgba(157, 8, 75, 0.65)), url(../assets/bk3.jpg);
+        background-size: cover;
+        background-position: center;
+        padding: 0 2%;
+    }
+
+
+    .content-0 h1 {
+        font-size: 40px;
+        font-family: "Righteous", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        line-height: 50px;
+        margin-top: 90%;
+        margin-bottom: 25px;
+
+    }
+
+    .content-0 {
+        margin-top: 20px;
+        color: #fff;
+        max-width: 620px;
+    }
+
+    .content-1 h2 {
+        font-size: 30px;
+        font-family: "Righteous", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        line-height: 60px;
+        margin-bottom: 25px;
+        text-align: center;
+    }
+
+    .content-2 h3 {
+        margin: 0;
+        padding: 33px;
+        font-size: 36px;
+        font-family: "Righteous", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    .container-home3 form {
+        display: flex;
+        width: 100%;
+        height: auto;
+        padding: 30px;
+    }
+
+    .content-4 h3 {
+        margin: 0;
+        padding: 33px;
+        font-size: 36px;
+        font-family: "Righteous", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    .wave {
+        position: absolute;
+        top: -45px;
+        left: 0;
+        width: 100%;
+        height: 65px;
+        background: url(https://i.ibb.co/wQZVxxk/wave.png);
+        background-size: cover;
+    }
+
+    .footer {
+        position: relative;
+        width: 100%;
+        background: #3586ff;
+        min-height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .social-icon .menu {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px 0;
+    }
+
+    .menu {
+        flex-wrap: nowrap;
+    }
+
+    .container-home3 {
+        padding: 2
+    }
+
+    form,
+    .pd {
+        margin: 0;
+        padding: 0;
+    }
+
+    form .genere {
+        margin-top: 20px;
+    }
+
+    .prezzo {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .prezzo h4 {
+        padding: 10px;
+    }
+
+    .prezzo label {
+        font-size: 15px;
+        font-weight: 600;
+    }
+
+    .prezzo .pd {
+        padding: 5px;
+    }
+
+    .button {
+        margin-top: 10px;
+    }
+
+    .card[for="c1"] {
+        background-image: url('/assets/Cyberpunk.jpeg');
+    }
+
+    .card[for="c2"] {
+        background-image: url('/assets/Hades.png');
+    }
+
+    .card[for="c3"] {
+        background-image: url('/assets/hollow2.jpg');
+    }
+
+    .card[for="c4"] {
+        background-image: url('/assets/personaggi.jpg');
+    }
+
+    .input:checked+label {
+        width: 100%;
+    }
+
+    .card {
+        width: 119px;
+        display: flex;
+        align-items: end;
+        border-radius: 2rem;
+        cursor: pointer;
+        overflow: hidden;
+        background-size: cover;
+        transition: .6s cubic-bezier(.28, -0.03, 0, .99);
+        box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.8);
+    }
+
+    .card>.row>.icon {
+        background: #223;
+        color: white;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+
+    .card>.row {
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: nowrap;
+        padding: 5px;
+    }
+
+    .card>.row>.description {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        overflow: hidden;
+        height: 80px;
+        width: 520px;
+        opacity: 0;
+        transform: translateY(30px);
+        transition-delay: .3s;
+        transition: all .3s ease;
+    }
+
+}
+
+
+
+
+
+
